@@ -1,0 +1,96 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #6495ED, #FFFFFF);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh; /* Esto asegura que el degradado se aplique a toda la altura de la ventana del navegador */
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    width: calc(100% - 40px);
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 19px); /* Ancho igual al del textarea */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la lista de tweets */
+
+#lista-tweets {
+    margin-top: 20px;
+    background-color: rgb(243 243 243 / 70%); /* Blanco transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tweet {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tweet:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para los encabezados */
+
+h2 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces */
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
