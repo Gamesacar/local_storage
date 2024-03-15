@@ -10,6 +10,18 @@ body {
     background-size: cover;
 }
 
+.title {
+    color: #007bff; /* Color del texto */
+    font-size: 54px; /* Tamaño de la fuente */
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 30px; /* Margen inferior */
+}
+
+.title::before {
+    content: "\1F426"; /* Código Unicode para el emoji de pajarito */
+    margin-right: 10px; /* Espacio a la derecha del emoji */
+}
+
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -62,35 +74,38 @@ textarea {
 
 #lista-tweets {
     margin-top: 20px;
-    background-color: rgb(243 243 243 / 70%); /* Blanco transparente */
-    padding: 10px;
-    border-radius: 5px;
 }
 
-.tweet {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+.tweet-container {
+    background-color: #e1e7fd; /* Color de fondo para el cuadro del tweet */
+    padding: 10px; /* Espacio interior dentro del cuadro */
+    border-radius: 5px; /* Bordes redondeados para el cuadro */
+    margin-bottom: 10px; /* Margen inferior entre los cuadros */
+    position: relative; /* Permitir posición absoluta de la "X" */
 }
 
-.tweet:last-child {
-    border-bottom: none;
+.borrar-tweet {
+    color: #fff; /* Color blanco para la "X" */
+    font-size: 18px; /* Tamaño de fuente */
+    text-decoration: none; /* Eliminar subrayado */
+    position: absolute; /* Posición absoluta para la "X" */
+    top: 5px; /* Alinear en la esquina superior */
+    right: 5px; /* Alinear en la esquina derecha */
+    width: 25px; /* Ancho del contenedor de la "X" */
+    height: 25px; /* Altura del contenedor de la "X" */
+    border-radius: 50%; /* Formar un círculo */
+    background-color: #ff0000; /* Color de fondo rojo */
+    text-align: center; /* Centrar texto (la "X") */
+    line-height: 25px; /* Centrar verticalmente */
 }
 
-/* Estilos para los encabezados */
-
-h2 {
-    color: #007bff;
-    margin-top: 0;
-    margin-bottom: 20px;
+.borrar-tweet:hover {
+    background-color: #cc0000; /* Cambiar color de fondo al hacer hover */
+    cursor: pointer; /* Cambiar cursor a mano al pasar el ratón */
 }
 
-/* Estilos para los enlaces */
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.label-tweet {
+    font-weight: bold; /* Hacer el texto en negrita */
+    color: #3ea70d; /* Color del texto */
+    font-size: 34px;
 }
